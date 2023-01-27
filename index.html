@@ -10,6 +10,66 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <div class="form">
+        <form action="" class="form_content">
+            <div class="form_box">
+                <input type="text" class="form_input" placeholder="Enter city">
+                <label for="" class="form_label">ENTER CITY</label>
+                <div class="form_shadow">
+                </div>
+            </div>
+
+            <div class="form_button">
+                <input type="submit" class="form_submit" value="Search">
+            </div>
+        </form>
+    </div>
+
+    <div class="data">
+        <div class="primary">
+            <div>
+                <h1><span id="temp">273</span> Kelvin | </h1>
+            </div>
+            <div>
+                <h1 id="weather">Mist</h1>
+            </div>
+        </div>
+
+        <div class="secondary">
+            <div>
+                <h3>Min temp</h3>
+                <h3><span id="min_temp">200</span> Kelvin</h3>
+            </div>
+            <div>
+                <h3>Feels like</h3>
+                <h3><span id="feels_like">205</span> Kelvin</h3>
+            </div>
+            <div>
+                <h3>Max temp</h3>
+                <h3><span id="max_temp">300</span> Kelvin</h3>
+            </div>
+        </div>
+        
+        <div class="tertiary">
+            <div class="extra">
+                <div>
+                    <h2>Humidity</h2>
+                    <h3><span id="humidity">69</span>%</h3>
+                </div>
+
+                <div>
+                    <h2>Coordinates</h2>
+                    <h3 id="coordinates">3445455, 445655</h3>
+                </div>
+
+                <div>
+                    <h2>Wind speed</h2>
+                    <h3><span id="winds"></span> m/s</h3>
+                </div>
+            </div>
+            <div class="extra"></div>
+            <div class="extra"></div>
+        </div>
+    </div>
 </body>
 </html>
