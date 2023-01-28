@@ -1,5 +1,3 @@
-console.log("I am alive!");
-
 const API_KEY = 'd62a84f583dd940bf61efc3461848a9d';
 
 const searchBtn = document.getElementById('searchBtn');
@@ -18,7 +16,6 @@ form.addEventListener('submit', (e)=> {
 
 searchBtn.addEventListener('click', async ()=> {
     let city = document.getElementById('city').value;
-    console.log(city);
 
     if (city.length === 0) {
         alert('Cannot find weather of nowhere :)');
@@ -45,8 +42,8 @@ const getWeatherData = async (city) => {
         const humidity = weatherData.main.humidity;
         const name = weatherData.name;
 
-        console.log(weatherData);
-        /*console.log(`Temperature: ${weatherData.main.temp} Kelvin`);
+        /*console.log(weatherData);
+        console.log(`Temperature: ${weatherData.main.temp} Kelvin`);
         console.log(`Feels like: ${weatherData.main.feels_like} Kelvin`);
         console.log(`Min temp: ${weatherData.main.temp_min} Kelvin, Max temp: ${weatherData.main.temp_max} Kelvin`);
         console.log(`Wind speed: ${weatherData.wind.speed} m/s`);
