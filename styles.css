@@ -20,7 +20,7 @@ body {
     background-image: url("assets/sunset.jpg");
     background-size: 1920px;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 25px;
     color: var(--white-color);
     padding: 15px;
 }
