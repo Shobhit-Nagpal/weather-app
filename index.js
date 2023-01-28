@@ -54,10 +54,10 @@ const getWeatherData = async (city) => {
         console.log(`Weather: ${weatherData.weather[0].main}`);
         console.log(`Humidity: ${weatherData.main.humidity}%`);*/
 
-        weatherInfo[0] = temp;
-        weatherInfo[1] = temp_max;
-        weatherInfo[2] = temp_min;
-        weatherInfo[3] = feels_like;
+        weatherInfo[0] = convertToCelsius(temp);
+        weatherInfo[1] = convertToCelsius(temp_max);
+        weatherInfo[2] = convertToCelsius(temp_min);
+        weatherInfo[3] = convertToCelsius(feels_like);
         weatherInfo[4] = wind_speed;
         weatherInfo[5] = longitude;
         weatherInfo[6] = latitude;
@@ -94,4 +94,10 @@ const updateWeatherData = (weatherInfo) => {
     weather.textContent = weatherInfo[7];
     humidity.textContent = weatherInfo[8];
     location.textContent = weatherInfo[9];
+}
+
+
+const convertToCelsius = (kelvin) => {
+    const celsius = kelvin - 273.15;
+    return celsius.toFixed(2);
 }
