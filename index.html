@@ -16,8 +16,8 @@
     <div>
         <form id="form">
             <div>
+                <label for="city"></label>
                 <input type="text" id="city" name="city" placeholder="Enter city">
-                <label for="city">ENTER CITY</label>
             </div>
 
             <div>
@@ -29,47 +29,46 @@
     <div class="data">
         <div class="primary">
             <div>
-                <h1><span id="temp">273</span> Kelvin | </h1>
+                <h1 id="weather">Mist</h1>
             </div>
             <div>
-                <h1 id="weather">Mist</h1>
+                <h1>|</h1>
+            </div>
+            <div>
+                <h1><span id="temp">273</span> K</h1>
             </div>
         </div>
 
         <div class="secondary">
             <div>
-                <h3>Min temp</h3>
-                <h3><span id="min_temp">200</span> Kelvin</h3>
+                <h2>Min temp</h2>
+                <h3><span id="min_temp">200</span> K</h3>
             </div>
             <div>
-                <h3>Feels like</h3>
-                <h3><span id="feels_like">205</span> Kelvin</h3>
+                <h2>Feels like</h2>
+                <h3><span id="feels_like">205</span> K</h3>
             </div>
             <div>
-                <h3>Max temp</h3>
-                <h3><span id="max_temp">300</span> Kelvin</h3>
+                <h2>Max temp</h2>
+                <h3><span id="max_temp">300</span> K</h3>
             </div>
         </div>
         
         <div class="tertiary">
             <div class="extra">
-                <div>
-                    <h2>Humidity</h2>
-                    <h3><span id="humidity">69</span>%</h3>
-                </div>
-
-                <div>
-                    <h2>Coordinates</h2>
-                    <h3 id="coordinates">3445455, 445655</h3>
-                </div>
-
-                <div>
-                    <h2>Wind speed</h2>
-                    <h3><span id="winds"></span> m/s</h3>
-                </div>
+                <h2>Humidity</h2>
+                <h3><span id="humidity">69</span>%</h3>
             </div>
-            <div class="extra"></div>
-            <div class="extra"></div>
+
+            <div class="extra">
+                <h2>Coordinates</h2>
+                <h3><span id="coordinates">3445455, 445655</span></h3>
+            </div>
+
+            <div class="extra">
+                <h2>Wind speed</h2>
+                <h3><span id="winds">2</span> m/s</h3>
+            </div>
         </div>
     </div>
 </body>

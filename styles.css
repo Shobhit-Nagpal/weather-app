@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;900&display=swap');
 
 * {
     margin: 0px;
@@ -9,7 +9,7 @@
 :root {
     --white-color: #ffffff;
     --black-color: #000000;
-    --primary-color: hsl(79, 100%, 49%);
+    --primary-color: #4212B4;
 
     --body-font: 'Poppins', sans-serif;
 }
@@ -17,8 +17,103 @@
 
 body {
     font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-image: url("assets/4kriver-forest-sunset-landscape-art.jpg");
+    background-image: url("assets/sunset.jpg");
     background-size: 1920px;
     text-align: center;
+    margin-top: 35px;
+    color: var(--white-color);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+.primary,
+.secondary,
+.tertiary {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.secondary,
+.tertiary {
+    font-weight: 300;
+}
+
+.tertiary {
+    margin-top: 130px;
+}
+
+.extra {
+    border: 2px solid white;
+    border-radius: 5px;
+    color: var(--white-color);
+    padding: 10px;
+}
+
+.extra:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.data {
+    margin-top: 50px;
+}
+
+#form {
+    margin-top: 15px;
+}
+
+#title {
+    font-size: 70px;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 40px;
+    background-color: #4212B4;
+    outline: none;
+    border: 1px solid var(--white-color);
+    padding: 10px;
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+::placeholder {
+    color: var(--white-color);
+}
+
+#searchBtn {
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: #24005C;
+    color: var(--white-color);
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    border-radius: 2.5px;
+    border: 1px solid var(--white-color);
+}
+
+span {
+    font-size: 30px;
+}
+
+#temp {
+    font-size: 50px;
 }
