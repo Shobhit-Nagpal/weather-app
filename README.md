@@ -1,7 +1,7 @@
 # weather-app
-The repo is one of the projects given in <a href="www.theodinproject.com">The Odin Project</a>
+The repo is one of the projects given in <a href="https://www.theodinproject.com/">The Odin Project</a>
 
-The task was to make a weather app by using the <a href="www.openweathermap.org">OpenWeather</a> API and understand Promises.
+The task was to make a weather app by using the <a href="https://openweathermap.org/">OpenWeather</a> API and understand Promises.
 
 The background image was found from: https://4kwallpapers.com/nature/mountains-rocks-night-starry-sky-scenery-illustration-macos-3810.html
 
