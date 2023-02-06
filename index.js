@@ -23,13 +23,24 @@ searchBtn.addEventListener('click', async ()=> {
     }
     
     const response = await getWeatherData(city);
-    updateWeatherData(response);
+    if (response === null) {
+        return;
+    }
+    else {
+        updateWeatherData(response);
+    }
 });
 
 const getWeatherData = async (city) => {
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`, {mode: 'cors'});
         const weatherData = await response.json();
+        
+
+        if (weatherData.cod === '404') {
+            alert("City not found! Please check the location entered again :)");
+            return null;
+        }
 
         const temp = weatherData.main.temp;
         const temp_max = weatherData.main.temp_max;
