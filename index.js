@@ -78,7 +78,7 @@ const getWeatherData = async (city) => {
         return weatherInfo;
     }
     catch (e) {
-        console.log("Error");
+        console.log(`Error: ${e}`);
     }
 }
 
