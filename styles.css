@@ -14,15 +14,24 @@
     --body-font: 'Poppins', sans-serif;
 }
 
+html, body {
+    min-width: 360px;
+}
 
 body {
     font-family: var(--body-font);
     background-image: url("assets/sunset.jpg");
     background-size: 1920px;
     text-align: center;
-    margin-top: 25px;
+    margin: 0 auto;
     color: var(--white-color);
     padding: 15px;
+}
+
+img {
+    object-fit: contain;
+    max-width: 100%;
+    height: 10px;
 }
 
 h1 {
@@ -81,7 +90,7 @@ h3 {
 }
 
 #title {
-    font-size: 70px;
+    font-size: 4.3rem;
 }
 
 input[type="text"] {
@@ -125,3 +134,41 @@ span {
     align-items: center;
 }
  
+
+@media screen and (max-width: 580px) {
+
+    .tertiary {
+        flex-direction: column;
+    }
+
+    body {
+        font-family: var(--body-font);
+        background-image: url("assets/sunset.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        margin: 0 auto;
+        color: var(--white-color);
+        padding: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    #title {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+
+    .primary,
+    .secondary,
+    .tertiary, 
+    #main {
+        flex-direction: column;
+    }
+}
